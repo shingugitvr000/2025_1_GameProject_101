@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         //속도로 직접 이동
         rb.velocity = new Vector3(moveHorizontal * moveSpeed, rb.velocity.y, moveVertical * moveSpeed);
 
+
         //점프 입력
         if (Input.GetButtonDown("Jump") && isGrounded)          //&& 두 값을 만족할때 -> (스페이스 버튼일 눌렸을때 와 isGrounded 가 True 일때)
         {
